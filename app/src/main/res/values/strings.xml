@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">ShowBox</string>
+    <string name="searchview">searchView</string>
+    <string name="user">User</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_sifi_movie">Popular Si-Fi Movie</string>
+    <string name="thrillerMovie">Popular Thriller Movie</string>
+    <string name="StockMarketMovie">Trending Stock Market Movie</string>
+    <string name="ActionMovie">Popular Action Movie</string>
+    <string name="slideImage">SlideImage</string>
+    <string name="todo">eo_rew</string>
+    <string name="back_todo">TODO</string>
+    <string name="userName">Pulak Das</string>
+    <string name="mobileDevelopment">Here is a step-by-step roadmap for full stack native Android app development:
+1) Choose an app idea and Create a plan:
+Brainstorm app ideas
+Identify user needs
+Research competition
+Create user personas
+Define app features
+Sketch wireframes
+Develop user flow
+Design mockups
+Write user stories
+Create project plan
+Set development milestones
+Prioritize features
+Define technical requirements
+Set project timeline
+Gather feedback
+Iterate and refine plan
+2) Learn Java or Kotlin :
+Choose language
+Setup IDE
+Learn syntax
+Study data types
+Practice control flow
+Understand Object Oriented Programming (OOPs)
+Learn collections
+Explore exceptions
+Understand threading
+Practice debugging
+Learn Android specifics
+Build sample apps
+Practice, practice, practice!
+3) Setup Development Environment :
+Download Android Studio
+Install JDK
+Install Android SDK
+Configure SDK Manager
+Create a new project
+Familiarize with IDE
+Configure emulator
+Test on devices
+Install plugins
+Setup Git
+Learn Gradle
+Explore device manager
+4) Understand the android Architecture :
+Learn kernel layer
+Understand HAL layer
+Study Android runtime
+Explore framework layer
+Understand app layer
+Learn app components
+Understand AndroidManifest.xml
+Study Activity lifecycle
+Explore Intents
+Understand Content Providers
+Study Broadcast Receivers
+Learn Services
+5) Learn XML :
+Understand syntax
+Study elements
+Learn attributes
+Use layout editor
+Learn Views
+Learn Different Layout Types
+Create layouts
+Practice nesting
+Learn resource system
+Use styles and themes
+Understand data binding
+Use constraints in layouts
+Learn animation with XML
+6) Learn Android APIS :
+Study API documentation
+Learn Intent API
+Explore UI components
+Use Fragment API
+Learn Network API
+Study Location API
+Learn Camera API
+Use Sensor API
+Explore Media API
+Learn Storage API
+Study Notification API
+Learn Bluetooth API
+7) Learn About Databases :
+Understand data storage
+Learn SQLite basics
+Use Room library
+Study Firebase database
+Learn Content Providers
+Explore SharedPreferences
+Understand Realm database
+Study ObjectBox database
+Learn GreenDAO library
+Practice database migration
+8) Learn about REST APIS :
+Understand APIs
+Learn HTTP basics
+Study REST principles
+Use Retrofit library
+Learn OkHttp library
+Explore Volley library
+Understand JSON format
+Practice API calls
+Learn OAuth for authentication
+Study API versioning
+9) Test and Debug Your Apps :
+Understand testing types
+Use JUnit for unit tests
+Study Espresso for UI tests
+Use mock objects
+Learn testing frameworks
+Test on emulators
+Test on physical devices
+Use debugging tools
+Learn about breakpoints
+Use logging statements
+Understand memory leaks
+Practice error handling.
+10) Publish Your Apps :
+Create developer account
+Understand pricing models
+Set up distribution options
+Generate APK file
+Optimize app size
+Create app listing
+Add screenshots and videos
+Set up app rating
+Publish to Play Store
+Manage app updates
+Understand user feedback
+Optimize app visibility.
+There are several popular architecture patterns for Android development, including:
+
+Model-View-Controller (MVC)
+Model-View-Presenter (MVP)
+Model-View-ViewModel (MVVM)
+Clean Architecture
+Domain-Driven Design (DDD)
+Reactive Architecture
+Each of these patterns has its own pros and cons, and the best choice depends on the specific project and team preferences.
+
+This roadmap will give you a solid foundation in full stack native Android app development. Remember, practice makes perfect, so keep practicing and building apps to improve your skills. Good luck!</string>
+</resources>

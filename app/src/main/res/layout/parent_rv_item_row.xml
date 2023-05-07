@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appBg">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp">
+        <TextView
+            android:id="@+id/pop_mov_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Action Movie"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="@dimen/_14sdp"/>
+       <ImageView
+           android:layout_width="@dimen/_13sdp"
+           android:layout_height="@dimen/_13sdp"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/forward_arrow"
+           android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/child_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"/>
+</RelativeLayout>

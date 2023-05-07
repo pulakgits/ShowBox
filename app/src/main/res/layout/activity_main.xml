@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg"
+    tools:context=".a_MainActivity">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+            <LinearLayout
+                android:id="@+id/userLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/toolTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Good Evening"
+                    android:textSize="@dimen/_19sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_bold"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/iconCard"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_notifications_24"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/iconCard"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="@dimen/_100sdp"
+                app:cardBackgroundColor="@color/appBg">
+                <ImageView
+                    android:id="@+id/userIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"
+        android:layout_above="@+id/bnView"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bnview_items"
+        app:itemIconSize="@dimen/_23sdp"
+        android:elevation="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/appBg"/>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg"
+    tools:context=".A_HomeFragment.Inner_Fragments.A_ForYou.ForYou">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/slide_sample" />
+                <include
+                    layout="@layout/movie_item_row_shimar_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+
+                    <include layout="@layout/movie_item_row_shimar" />
+
+                    <include layout="@layout/movie_item_row_shimar" />
+
+                    <include layout="@layout/movie_item_row_shimar" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/movie_item_row_shimar_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/movie_item_row_shimar" />
+
+                    <include layout="@layout/movie_item_row_shimar" />
+
+                    <include layout="@layout/movie_item_row_shimar" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/movie_item_row_shimar_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+
+                    <include layout="@layout/movie_item_row_shimar" />
+
+                    <include layout="@layout/movie_item_row_shimar" />
+
+                    <include layout="@layout/movie_item_row_shimar" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/viewPagers"
+            layout="@layout/view_pager_layout" />
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/parent_rv"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/viewPagers"
+           android:visibility="gone"/>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

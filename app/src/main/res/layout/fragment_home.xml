@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appBg"
+    tools:context=".A_HomeFragment.a_HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                android:background="@color/appBg"
+                app:tabSelectedTextColor="@color/pink"
+                app:tabRippleColor="@color/lightWhite"
+                app:tabIndicatorColor="@color/pink"
+                app:tabIndicatorHeight="@dimen/_2sdp"
+                app:tabIndicatorFullWidth="false"
+                app:tabTextColor="@color/grey"
+                app:tabTextAppearance="@style/CustomTabTextAppearance"/>
+            </ScrollView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tab"
+                android:background="@color/appBg" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/action_rc_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+</FrameLayout>

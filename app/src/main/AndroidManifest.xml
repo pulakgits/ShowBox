@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.basetechz.showbox">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShowBox"
+        tools:targetApi="31">
+        <activity
+            android:name=".J_Profile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".E_Authentication.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".E_Authentication.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".E_Authentication.SignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".K_Setting.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".J_Profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".I_Activity.MoviePage"
+            android:exported="false" />
+        <activity
+            android:name=".I_Activity.VideoActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".A_HomeFragment.Main_Activity.a_MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.drive.com.basetechz.showbox"
+            android:value="967943280847-962qrjj0dg2vobk48b93a4epm2u5im2n.apps.googleusercontent.com" />
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_96sdp"
+    android:layout_height="@dimen/_170sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_margin="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="@dimen/_96sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/movieTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:background="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/appBg"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:background="?android:attr/selectableItemBackground">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/movieText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/app_name" />
+    </LinearLayout>
+</RelativeLayout>
